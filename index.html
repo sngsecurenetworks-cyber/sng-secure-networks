@@ -3,203 +3,144 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="SNG Secure Networks - smart security and automation solutions for homes, offices and businesses. CCTV, access control, fire alarm, networking, and home & office automation.">
+  <meta name="description" content="SNG Secure Networks provides CCTV, access control, biometric systems, fire alarm, networking, laptop service and procurement, printers and accessories, and home & office automation.">
   <meta name="theme-color" content="#061b4f">
   <title>SNG Secure Networks | Smart Security | Safer Tomorrow</title>
   <link rel="icon" href="assets/sng-logo.png">
-  <link rel="stylesheet" href="style.css">
+  <style>
+    :root{--navy:#061b4f;--blue:#086cff;--cyan:#16c7ff;--ink:#0a245f;--muted:#536585;--white:#fff;--soft:#f4f8ff;--line:#d9e7fb}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Arial,Helvetica,sans-serif;color:var(--ink);background:#fff;line-height:1.55}
+    a{text-decoration:none;color:inherit}.container{width:min(1180px,92%);margin:auto}
+    .site-header{position:sticky;top:0;z-index:50;background:#fff;border-bottom:1px solid #e7eef8;box-shadow:0 4px 18px rgba(4,32,82,.06)}
+    .nav-wrap{min-height:82px;display:flex;align-items:center;gap:28px}.brand img{width:265px;max-height:72px;object-fit:contain;display:block}
+    .nav{display:flex;gap:26px;margin-left:auto}.nav a{font-weight:700;font-size:15px;color:#12366f}.nav a:hover{color:var(--blue)}
+    .nav-cta,.btn{display:inline-flex;align-items:center;justify-content:center;border-radius:999px;font-weight:800;padding:13px 22px;border:1px solid transparent;transition:.2s}
+    .nav-cta,.btn-primary{background:linear-gradient(90deg,#0877ef,#13b8ff);color:#fff;box-shadow:0 10px 25px rgba(0,123,255,.22)}
+    .btn-outline{border-color:#11aef6;color:#0871d8;background:#fff}.btn:hover,.nav-cta:hover{transform:translateY(-2px)}
+    .contact-mini{display:flex;flex-direction:column;gap:2px;border-left:1px solid #ccd9eb;padding-left:22px;font-size:13px;font-weight:700}
+    .hero{min-height:480px;background:#031d52 url("assets/sng-cover.png") center/cover no-repeat;position:relative;overflow:hidden}
+    .hero::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(1,22,65,.48),rgba(1,22,65,.05));pointer-events:none}
+    .hero-content{position:relative;z-index:2;min-height:480px;display:flex;align-items:center}
+    .hero-copy{max-width:650px;color:#fff;padding:50px 0}.eyebrow{letter-spacing:.08em;font-weight:800;font-size:13px;color:#0a76e8;margin:0 0 10px}
+    .hero-copy .eyebrow{color:#bceeff}.hero h1{font-size:clamp(40px,5vw,68px);line-height:1.04;margin:0 0 20px;max-width:680px}.hero h1 span{color:#16c7ff}
+    .hero-text{font-size:18px;max-width:620px;color:#eef7ff}.hero-actions{display:flex;gap:14px;flex-wrap:wrap;margin:24px 0}.hero-points{display:flex;gap:18px;flex-wrap:wrap;font-weight:700;font-size:14px}
+    .hero-points span{background:rgba(0,23,65,.45);border:1px solid rgba(255,255,255,.22);padding:8px 12px;border-radius:999px}
+    .service-strip{background:#f5f9ff;border-bottom:1px solid #dbe8f8}.strip-grid{display:grid;grid-template-columns:repeat(7,1fr);gap:0}.strip-item{padding:18px 10px;text-align:center;border-right:1px solid #cfe0f6;font-weight:800;font-size:13px}.strip-item:last-child{border-right:0}.strip-icon{display:block;font-size:28px;margin-bottom:5px}
+    .section{padding:76px 0}.section-heading{text-align:left;max-width:760px;margin-bottom:34px}.section-heading h2{font-size:clamp(30px,4vw,46px);line-height:1.1;margin:0 0 12px}.section-heading p{color:var(--muted);font-size:17px}
+    .section-heading.center{text-align:center;margin-left:auto;margin-right:auto}.service-grid{display:grid;grid-template-columns:repeat(6,1fr);gap:16px}
+    .service-card{background:#fff;border:1px solid var(--line);border-radius:14px;overflow:hidden;box-shadow:0 10px 28px rgba(18,66,126,.08);transition:.2s}.service-card:hover{transform:translateY(-4px);box-shadow:0 16px 34px rgba(18,66,126,.14)}
+    .service-card img{width:100%;height:145px;object-fit:cover;display:block}.service-body{padding:18px}.service-card h3{font-size:18px;margin:0 0 8px}.service-card p{font-size:14px;color:var(--muted);margin:0 0 12px}.service-card a{font-weight:800;color:#0874db;font-size:14px}
+    .showcase{background:var(--soft)}.showcase-grid{display:grid;grid-template-columns:1fr 1.25fr;gap:42px;align-items:center}.showcase-image{width:100%;border-radius:18px;box-shadow:0 18px 45px rgba(6,35,85,.15);display:block}
+    .check-list{padding:0;margin:22px 0;list-style:none}.check-list li{margin:11px 0;font-weight:700}.check-list li::before{content:"✓";color:#079df0;font-weight:900;margin-right:10px}
+    .dark-section{background:linear-gradient(135deg,#031946,#073d88);color:#fff}.dark-section .section-heading p,.dark-section .benefit p{color:#cfe4ff}
+    .benefit-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}.benefit{padding:24px;border:1px solid rgba(255,255,255,.18);border-radius:14px;background:rgba(255,255,255,.06)}.benefit span{color:#15c8ff;font-size:14px;font-weight:900}.benefit h3{margin:10px 0 5px}
+    .quote-box{background:linear-gradient(100deg,#eaf6ff,#f9fcff);border:1px solid #d7eafa;border-radius:20px;padding:34px;display:flex;align-items:center;justify-content:space-between;gap:25px}.quote-actions{display:flex;gap:10px;flex-wrap:wrap}
+    .contact-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}.contact-card{border:1px solid var(--line);border-radius:14px;padding:24px;background:#fff;box-shadow:0 10px 28px rgba(18,66,126,.07)}.contact-icon{font-size:28px;color:#078ef2}.contact-card h3{margin:8px 0}.contact-card a{color:#0872d6;font-weight:800}.contact-card p{color:var(--muted);margin:0}
+    footer{background:#031946;color:#dcecff;padding:32px 0}.footer-wrap{display:grid;grid-template-columns:1fr auto;gap:20px;align-items:center}.footer-logo{width:230px;height:95px;object-fit:contain;object-position:left center;background:#fff;border-radius:8px}.footer-links{display:flex;gap:20px}.copyright{grid-column:1/-1;font-size:13px;color:#9fc2eb}
+    .floating-whatsapp{position:fixed;right:20px;bottom:20px;width:54px;height:54px;border-radius:50%;display:grid;place-items:center;background:#19b75b;color:#fff;font-weight:900;box-shadow:0 12px 30px rgba(0,0,0,.22);z-index:60}
+    @media(max-width:1000px){.nav{gap:14px}.contact-mini{display:none}.service-grid{grid-template-columns:repeat(3,1fr)}.strip-grid{grid-template-columns:repeat(4,1fr)}.benefit-grid{grid-template-columns:repeat(2,1fr)}.contact-grid{grid-template-columns:repeat(2,1fr)}}
+    @media(max-width:760px){.nav{display:none}.nav-wrap{min-height:70px}.brand img{width:220px}.hero,.hero-content{min-height:520px}.hero{background-position:62% center}.hero-copy{padding:35px 0}.hero h1{font-size:42px}.showcase-grid{grid-template-columns:1fr}.service-grid{grid-template-columns:1fr 1fr}.strip-grid{grid-template-columns:repeat(2,1fr)}.benefit-grid,.contact-grid{grid-template-columns:1fr}.quote-box{display:block}.quote-actions{margin-top:20px}.footer-wrap{grid-template-columns:1fr}.footer-links{flex-wrap:wrap}}
+    @media(max-width:480px){.service-grid{grid-template-columns:1fr}.hero h1{font-size:36px}.strip-grid{grid-template-columns:1fr 1fr}.nav-cta{padding:10px 14px;font-size:13px}}
+  </style>
 </head>
 <body>
-  <header class="site-header" id="top">
-    <div class="container nav-wrap">
-      <a class="brand" href="#home" aria-label="SNG Secure Networks home">
-        <img src="assets/sng-logo.png" alt="SNG Secure Networks logo">
-      </a>
-      <button class="menu-toggle" aria-label="Open menu" aria-expanded="false">☰</button>
-      <nav class="nav" aria-label="Main navigation">
-        <a href="#home">Home</a>
-        <a href="#services">Services</a>
-        <a href="#about">About</a>
-        <a href="#why-us">Why Us</a>
-        <a href="#contact">Contact</a>
-      </nav>
-      <a class="nav-cta" href="https://wa.me/917996011749?text=Hello%20SNG%20Secure%20Networks%2C%20I%20would%20like%20a%20quotation." target="_blank" rel="noopener">Get a Quote</a>
+<header class="site-header" id="top">
+  <div class="container nav-wrap">
+    <a class="brand" href="#home"><img src="assets/sng-logo.png" alt="SNG Secure Networks logo"></a>
+    <nav class="nav" aria-label="Main navigation">
+      <a href="#home">Home</a><a href="#about">About Us</a><a href="#services">Services</a><a href="#work">Our Work</a><a href="#contact">Contact</a>
+    </nav>
+    <a class="nav-cta" href="https://wa.me/917996011749?text=Hello%20SNG%20Secure%20Networks%2C%20I%20would%20like%20a%20quotation." target="_blank" rel="noopener">Get a Quote →</a>
+    <div class="contact-mini"><a href="tel:+917996011749">☎ +91 79960 11749</a><a href="https://wa.me/917996011749" target="_blank">◉ +91 79960 11749</a><a href="mailto:sngsecurenetworks@gmail.com">✉ sngsecurenetworks@gmail.com</a></div>
+  </div>
+</header>
+
+<main>
+<section class="hero" id="home">
+  <div class="container hero-content">
+    <div class="hero-copy">
+      <p class="eyebrow">ADVANCED SECURITY & IT SOLUTIONS FOR HOMES, BUSINESSES & INDUSTRIES</p>
+      <h1>Your Complete <span>Security</span> & <span>IT Solutions</span> Partner</h1>
+      <p class="hero-text">We provide end-to-end security systems and IT solutions to keep your people, property and business safe and connected.</p>
+      <div class="hero-actions"><a class="btn btn-primary" href="https://wa.me/917996011749?text=Hello%20SNG%20Secure%20Networks%2C%20I%20need%20a%20security%20or%20IT%20solution." target="_blank">Get a Quote →</a><a class="btn btn-outline" href="#services">Our Services</a></div>
+      <div class="hero-points"><span>CCTV</span><span>Access Control</span><span>Biometric</span><span>Networking</span><span>Laptop Service</span><span>Printers</span></div>
     </div>
-  </header>
+  </div>
+</section>
 
-  <main>
-    <section class="hero" id="home">
-      <div class="hero-bg"></div>
-      <div class="container hero-content">
-        <div class="hero-copy">
-          <p class="eyebrow">SECURE • SMART • CONNECTED</p>
-          <h1>Smart security for a <span>safer tomorrow.</span></h1>
-          <p class="hero-text">Reliable security, networking and automation solutions for homes, offices and businesses — professionally installed and supported.</p>
-          <div class="hero-actions">
-            <a class="btn btn-primary" href="https://wa.me/917996011749?text=Hello%20SNG%20Secure%20Networks%2C%20I%20need%20a%20security%20solution." target="_blank" rel="noopener">WhatsApp Us</a>
-            <a class="btn btn-outline" href="#services">Explore Services</a>
-          </div>
-          <div class="hero-points">
-            <span>✓ Professional Installation</span>
-            <span>✓ Reliable Solutions</span>
-            <span>✓ Ongoing Support</span>
-          </div>
-        </div>
-      </div>
-    </section>
+<section class="service-strip">
+  <div class="container strip-grid">
+    <div class="strip-item"><span class="strip-icon">📹</span>CCTV<br>Surveillance</div>
+    <div class="strip-item"><span class="strip-icon">🔐</span>Access Control<br>Systems</div>
+    <div class="strip-item"><span class="strip-icon">🔥</span>Fire Alarm<br>Systems</div>
+    <div class="strip-item"><span class="strip-icon">🔗</span>Networking<br>Solutions</div>
+    <div class="strip-item"><span class="strip-icon">🏠</span>Home & Office<br>Automation</div>
+    <div class="strip-item"><span class="strip-icon">💻</span>Laptop Service<br>& Procurement</div>
+    <div class="strip-item"><span class="strip-icon">🖨️</span>Printers<br>& Accessories</div>
+  </div>
+</section>
 
-    <section class="trust-strip">
-      <div class="container trust-grid">
-        <div><strong>5</strong><span>Core Services</span></div>
-        <div><strong>24/7</strong><span>Security Mindset</span></div>
-        <div><strong>100%</strong><span>Customer Focus</span></div>
-      </div>
-    </section>
-
-    <section class="section" id="services">
-      <div class="container">
-        <div class="section-heading">
-          <p class="eyebrow">WHAT WE DO</p>
-          <h2>Security & technology solutions</h2>
-          <p>From surveillance to connectivity, we help protect and connect your property with practical technology.</p>
-        </div>
-
-        <div class="service-grid">
-          <article class="service-card">
-            <div class="icon">◉</div>
-            <h3>CCTV Surveillance</h3>
-            <p>Camera systems for homes, offices, shops and business premises with clear monitoring and recording.</p>
-            <a href="https://wa.me/917996011749?text=I%20am%20interested%20in%20CCTV%20Surveillance." target="_blank" rel="noopener">Enquire →</a>
-          </article>
-          <article class="service-card">
-            <div class="icon">⌁</div>
-            <h3>Access Control</h3>
-            <p>Biometric, RFID and secure entry solutions designed to manage who can access your premises.</p>
-            <a href="https://wa.me/917996011749?text=I%20am%20interested%20in%20Access%20Control." target="_blank" rel="noopener">Enquire →</a>
-          </article>
-          <article class="service-card">
-            <div class="icon">♨</div>
-            <h3>Fire Alarm</h3>
-            <p>Fire detection and alarm solutions that help provide an early warning when it matters most.</p>
-            <a href="https://wa.me/917996011749?text=I%20am%20interested%20in%20Fire%20Alarm%20systems." target="_blank" rel="noopener">Enquire →</a>
-          </article>
-          <article class="service-card">
-            <div class="icon">⌘</div>
-            <h3>Networking</h3>
-            <p>Structured networking, Wi‑Fi and connectivity solutions for dependable home and office performance.</p>
-            <a href="https://wa.me/917996011749?text=I%20am%20interested%20in%20Networking%20solutions." target="_blank" rel="noopener">Enquire →</a>
-          </article>
-          <article class="service-card">
-            <div class="icon">⌂</div>
-            <h3>Home & Office Automation</h3>
-            <p>Smart control and automation solutions that make everyday spaces safer, simpler and more connected.</p>
-            <a href="https://wa.me/917996011749?text=I%20am%20interested%20in%20Home%20%26%20Office%20Automation." target="_blank" rel="noopener">Enquire →</a>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section about-section" id="about">
-      <div class="container two-col">
-        <div class="about-image">
-          <img src="assets/sng-banner.png" alt="SNG Secure Networks security and automation branding">
-        </div>
-        <div class="about-copy">
-          <p class="eyebrow">ABOUT SNG</p>
-          <h2>Your trusted partner in security & automation.</h2>
-          <p>SNG Secure Networks provides smart and reliable technology solutions for residential, commercial and office environments.</p>
-          <p>Our approach is simple: understand your requirement, recommend the right solution, install it professionally, and remain available for support.</p>
-          <ul class="check-list">
-            <li>Practical solutions matched to your property</li>
-            <li>Clean, professional installation</li>
-            <li>Reliable equipment and configuration</li>
-            <li>Support after installation</li>
-          </ul>
-          <a class="btn btn-primary" href="#contact">Talk to SNG</a>
-        </div>
-      </div>
-    </section>
-
-    <section class="section dark-section" id="why-us">
-      <div class="container">
-        <div class="section-heading light">
-          <p class="eyebrow">WHY CHOOSE US</p>
-          <h2>Built around protection, reliability and service.</h2>
-          <p>We focus on solutions that work in the real world — not just products on a quotation.</p>
-        </div>
-        <div class="benefit-grid">
-          <div class="benefit"><span>01</span><h3>Right Solution</h3><p>We focus on your actual security and connectivity needs.</p></div>
-          <div class="benefit"><span>02</span><h3>Professional Setup</h3><p>Careful installation, configuration and testing.</p></div>
-          <div class="benefit"><span>03</span><h3>Clear Guidance</h3><p>Simple explanations so you know what you are getting.</p></div>
-          <div class="benefit"><span>04</span><h3>Ongoing Support</h3><p>Help when you need assistance with your installed system.</p></div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section quote-section">
-      <div class="container quote-box">
-        <div>
-          <p class="eyebrow">NEED A SECURITY SOLUTION?</p>
-          <h2>Let's secure your home or business.</h2>
-          <p>Tell us what you need and we can discuss the right solution for your property.</p>
-        </div>
-        <div class="quote-actions">
-          <a class="btn btn-primary" href="https://wa.me/917996011749?text=Hello%20SNG%20Secure%20Networks%2C%20I%20would%20like%20to%20discuss%20a%20security%20requirement." target="_blank" rel="noopener">WhatsApp</a>
-          <a class="btn btn-outline" href="mailto:sngsecurenetworks@gmail.com?subject=Security%20Solution%20Enquiry">Email Us</a>
-          <a class="btn btn-outline" href="tel:+917996011749">Call Now</a>
-        </div>
-      </div>
-    </section>
-
-    <section class="section contact-section" id="contact">
-      <div class="container">
-        <div class="section-heading">
-          <p class="eyebrow">CONTACT</p>
-          <h2>Start a conversation</h2>
-          <p>For quotations, site requirements or service enquiries, contact SNG Secure Networks directly.</p>
-        </div>
-        <div class="contact-grid">
-          <div class="contact-card">
-            <span class="contact-icon">☎</span>
-            <h3>Call</h3>
-            <a href="tel:+917996011749">+91 79960 11749</a>
-          </div>
-          <div class="contact-card">
-            <span class="contact-icon">◉</span>
-            <h3>WhatsApp</h3>
-            <a href="https://wa.me/917996011749" target="_blank" rel="noopener">Chat with us</a>
-          </div>
-          <div class="contact-card">
-            <span class="contact-icon">✉</span>
-            <h3>Email</h3>
-            <a href="mailto:sngsecurenetworks@gmail.com">sngsecurenetworks@gmail.com</a>
-          </div>
-          <div class="contact-card">
-            <span class="contact-icon">⌂</span>
-            <h3>Services</h3>
-            <p>CCTV • Access Control • Fire Alarm • Networking • Automation</p>
-          </div>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <footer>
-    <div class="container footer-wrap">
-      <div>
-        <img src="assets/sng-logo.png" alt="SNG Secure Networks" class="footer-logo">
-        <p>SMART SECURITY | SAFER TOMORROW</p>
-      </div>
-      <div class="footer-links">
-        <a href="#services">Services</a>
-        <a href="#about">About</a>
-        <a href="#contact">Contact</a>
-      </div>
-      <div class="copyright">© <span id="year"></span> SNG Secure Networks. All rights reserved.</div>
+<section class="section" id="services">
+  <div class="container">
+    <div class="section-heading">
+      <p class="eyebrow">WHAT WE DO</p>
+      <h2>Security & technology solutions</h2>
+      <p>From surveillance to connectivity, we help protect and connect your property with practical technology — including printers and laptop services.</p>
     </div>
-  </footer>
+    <div class="service-grid">
+      <article class="service-card"><img src="assets/sng-solutions-showcase.png" alt="CCTV security equipment"><div class="service-body"><h3>CCTV Surveillance</h3><p>Camera installation, monitoring and recording solutions for homes, offices, shops and businesses.</p><a href="https://wa.me/917996011749?text=I%20am%20interested%20in%20CCTV%20Surveillance." target="_blank">Enquire →</a></div></article>
+      <article class="service-card"><img src="assets/sng-solutions-showcase.png" alt="Access control and biometric security"><div class="service-body"><h3>Access Control & Biometric</h3><p>Biometric attendance, fingerprint, RFID and secure entry systems for controlled access.</p><a href="https://wa.me/917996011749?text=I%20am%20interested%20in%20Access%20Control%20and%20Biometric%20systems." target="_blank">Enquire →</a></div></article>
+      <article class="service-card"><img src="assets/sng-solutions-showcase.png" alt="Fire alarm systems"><div class="service-body"><h3>Fire Alarm Systems</h3><p>Fire detection and alarm solutions designed to provide an early warning when it matters most.</p><a href="https://wa.me/917996011749?text=I%20am%20interested%20in%20Fire%20Alarm%20systems." target="_blank">Enquire →</a></div></article>
+      <article class="service-card"><img src="assets/sng-solutions-showcase.png" alt="Networking equipment"><div class="service-body"><h3>Networking Solutions</h3><p>Structured cabling, switches, routers, Wi-Fi and network setup for dependable connectivity.</p><a href="https://wa.me/917996011749?text=I%20am%20interested%20in%20Networking%20solutions." target="_blank">Enquire →</a></div></article>
+      <article class="service-card"><img src="assets/sng-solutions-showcase.png" alt="Laptop service and procurement"><div class="service-body"><h3>Laptop Service & Procurement</h3><p>Laptop sales, service and repair, upgrades, genuine parts and procurement support.</p><a href="https://wa.me/917996011749?text=I%20am%20interested%20in%20Laptop%20Service%20or%20Procurement." target="_blank">Enquire →</a></div></article>
+      <article class="service-card"><img src="assets/sng-solutions-showcase.png" alt="Printer and accessories"><div class="service-body"><h3>Printers & Accessories</h3><p>Printer sales, service, ink and toner, accessories and office printing support.</p><a href="https://wa.me/917996011749?text=I%20am%20interested%20in%20Printer%20Service%20or%20Procurement." target="_blank">Enquire →</a></div></article>
+    </div>
+  </div>
+</section>
 
-  <a class="floating-whatsapp" href="https://wa.me/917996011749?text=Hello%20SNG%20Secure%20Networks" target="_blank" rel="noopener" aria-label="Chat with SNG Secure Networks on WhatsApp">WA</a>
-  <script src="script.js"></script>
+<section class="section showcase" id="work">
+  <div class="container showcase-grid">
+    <div><p class="eyebrow">OUR WORK</p><h2>Security, connectivity and IT — together.</h2><p>From CCTV and biometric access control to networking, laptops and printers, SNG Secure Networks brings practical technology services together for homes, offices and businesses.</p><ul class="check-list"><li>Professional installation and configuration</li><li>Security system and networking support</li><li>Laptop service and procurement</li><li>Printer service and accessories</li></ul><a class="btn btn-primary" href="https://wa.me/917996011749?text=Hello%20SNG%20Secure%20Networks%2C%20I%20would%20like%20to%20discuss%20your%20services." target="_blank">Talk to SNG →</a></div>
+    <img class="showcase-image" src="assets/sng-solutions-showcase.png" alt="SNG Secure Networks security and IT solutions showcase">
+  </div>
+</section>
+
+<section class="section" id="about">
+  <div class="container">
+    <div class="section-heading center"><p class="eyebrow">ABOUT SNG SECURE NETWORKS</p><h2>Smart security | Safer tomorrow</h2><p>We focus on reliable products, clean installation and practical technology that helps your property stay protected, connected and productive.</p></div>
+  </div>
+</section>
+
+<section class="section dark-section">
+  <div class="container">
+    <div class="section-heading"><p class="eyebrow">WHY CHOOSE US</p><h2>Built around protection, reliability and service.</h2><p>We focus on solutions that work in the real world — not just products on a quotation.</p></div>
+    <div class="benefit-grid"><div class="benefit"><span>01</span><h3>Right Solution</h3><p>Security and IT solutions matched to your actual requirement.</p></div><div class="benefit"><span>02</span><h3>Professional Setup</h3><p>Careful installation, configuration and testing.</p></div><div class="benefit"><span>03</span><h3>Quality Support</h3><p>Clear guidance and dependable after-sales assistance.</p></div><div class="benefit"><span>04</span><h3>Complete Services</h3><p>Security systems plus laptops, networking and printers.</p></div></div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container quote-box">
+    <div><p class="eyebrow">NEED SECURITY OR IT SUPPORT?</p><h2>Let's secure and connect your home or business.</h2><p>Tell us what you need and we can discuss the right solution for your property or office.</p></div>
+    <div class="quote-actions"><a class="btn btn-primary" href="https://wa.me/917996011749?text=Hello%20SNG%20Secure%20Networks%2C%20I%20would%20like%20to%20discuss%20a%20requirement." target="_blank">WhatsApp</a><a class="btn btn-outline" href="mailto:sngsecurenetworks@gmail.com?subject=SNG%20Secure%20Networks%20Enquiry">Email Us</a><a class="btn btn-outline" href="tel:+917996011749">Call Now</a></div>
+  </div>
+</section>
+
+<section class="section" id="contact">
+  <div class="container">
+    <div class="section-heading center"><p class="eyebrow">REACH US</p><h2>Start a conversation</h2><p>For quotations, site requirements, security systems, laptop service, procurement or printer support, contact SNG Secure Networks.</p></div>
+    <div class="contact-grid"><div class="contact-card"><span class="contact-icon">☎</span><h3>Call</h3><a href="tel:+917996011749">+91 79960 11749</a></div><div class="contact-card"><span class="contact-icon">◉</span><h3>WhatsApp</h3><a href="https://wa.me/917996011749" target="_blank">Chat with us</a></div><div class="contact-card"><span class="contact-icon">✉</span><h3>Email</h3><a href="mailto:sngsecurenetworks@gmail.com">sngsecurenetworks@gmail.com</a></div><div class="contact-card"><span class="contact-icon">⌂</span><h3>Services</h3><p>CCTV • Access Control • Biometric • Fire Alarm • Networking • Laptops • Printers • Automation</p></div></div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="container footer-wrap">
+    <div><img src="assets/sng-logo.png" alt="SNG Secure Networks" class="footer-logo"><p>SMART SECURITY | SAFER TOMORROW</p></div>
+    <div class="footer-links"><a href="#services">Services</a><a href="#about">About</a><a href="#contact">Contact</a></div>
+    <div class="copyright">© <span id="year"></span> SNG Secure Networks. All rights reserved.</div>
+  </div>
+</footer>
+<a class="floating-whatsapp" href="https://wa.me/917996011749?text=Hello%20SNG%20Secure%20Networks" target="_blank" aria-label="Chat with SNG Secure Networks on WhatsApp">WA</a>
+<script>document.getElementById("year").textContent=new Date().getFullYear();</script>
 </body>
 </html>
